@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AgenciaB1</title>
+      
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="css/estilo.css" />
+     
+      <link rel="stylesheet" href="css/animate.min.css">
+
+      <script src="js/jquery.min.js"></script>
+      <script src="js/funcionalidades.js"></script>
+      <link rel="stylesheet" href="css/bootstrap.css">
+    
+      
+      
+  </head>
+  <body>
+      <ul class="menu menu-principal-mobile320 menu-invisivel">
+            <a class="fechar320-btn"><i class="fa fa-times"></i></a>
+            <li><a href="" class="toQuemsomos" data-target="#quemsomos">Quem somos</a></li>
+            <li><a href="" class="toOquefazemos" data-target="#oquefazemos">O que fazemos</a></li>
+            <li><a href="" class="toCases" data-target="#cases">Cases</a></li>
+            <li><a href="" class="toContato" data-target="#contato">Contato</a></li>
+            <li><a class="menu-whatsapp" href="https://api.whatsapp.com/send?phone=5521965768885&text=Eu%20estou%20interessado(a)%20nos%20serviços%20da%20agencia" target="_blank">Fale com a gente</a></li>
+      </ul>
+      <div class="secao-1">
+          <div class="container">
+
+              <div class="top-navigation">
+                  <div class="logotipo">
+                    <img src="img/logo.svg"
+                          srset="" class="logo-topo">
+                  </div>
+                  <ul class="menu-principal list-inline">
+                      <li><a href="#quemsomos2">Quem somos</a></li>
+                      <li><a href="#oquefazemos2" >O que fazemos</a></li>
+                      <li><a href="#cases2">Cases</a></li>
+                      <li><a href="#contato2">Contato</a></li>
+                      <li><a class="menu-whatsapp" href="https://api.whatsapp.com/send?phone=5521965768885&text=Eu%20estou%20interessado(a)%20nos%20serviços%20da%20agencia" target="_blank">Fale com a gente</a></li>
+                  </ul>
+                  <div class="container-menu-principal-mobile">
+                    <i class="material-icons">menu</i>
+                    <ul class="menu menu-principal-mobile menu-invisivel">
+                        <li><a href="" class="toQuemsomos" data-target="#quemsomos">Quem somos</a></li>
+                        <li><a href="" class="toOquefazemos" data-target="#oquefazemos">O que fazemos</a></li>
+                        <li><a href="" class="toCases" data-target="#cases">Cases</a></li>
+                        <li><a href="" class="toContato" data-target="#contato">Contato</a></li>
+                        <li><a class="menu-whatsapp" href="https://api.whatsapp.com/send?phone=5521965768885&text=Eu%20estou%20interessado(a)%20nos%20serviços%20da%20agencia" target="_blank">Fale com a gente</a></li>
+                    </ul>
+
+                  </div>
+
+                  <script>
+
+                    $(".top-navigation #menu-principal-mobile-btn").click(function(){
+                        var botao =  $(this);
+                        if($(window).width() < 768){
+                            var menu = $(".menu-principal-mobile320");
+                        }
+                        else{
+                            var menu = $(".menu-principal-mobile");
+                        }
+
+                        if(botao.attr("data-aberto") == 0){
+                            botao.attr("data-aberto",'1');
+                            botao.removeClass('fa-bars');
+                            menu.removeClass('menu-invisivel');
+                            botao.addClass('fa-times');
+                            menu.addClass('menu-visivel');
+                        }
+                        else if(botao.attr('data-aberto') == 1){
+                            botao.attr("data-aberto",'0');
+                            botao.removeClass('fa-times');
+                            menu.removeClass('menu-visivel');
+                            botao.addClass('fa-bars');  
+                            menu.addClass('menu-invisivel');
+                        }
+
+                        $(".fechar320-btn").click(function(){
+                            var menu = $(".menu-principal-mobile320");
+
+                            menu.removeClass("menu-visivel");
+                            menu.addClass("menu-invisivel");
+                            botao.attr("data-aberto",'0');
+                            botao.removeClass('fa-times');
+                            botao.addClass('fa-bars');  
+                        })
+
+                        $('.menu .toQuemsomos, .menu .toOquefazemos, .menu .toCases, .menu .toContato').on('click', function(e){
+                            e.preventDefault();
+
+                            var target = $(this).attr("data-target");
+                            var posicaoToScroll = $(target).offset().top;
+                            $("html").animate(
+                            {
+                                scrollTop: posicaoToScroll+"px"
+                            },1000);
+
+                            menu.removeClass("menu-visivel");
+                            menu.addClass("menu-invisivel");
+                            botao.attr("data-aberto",'0');
+                            botao.removeClass('fa-times');
+                            botao.addClass('fa-bars');  
+
+                        });      
+
+                    });
+
+
+
+                  </script>
+
+              </div>    
+              <div class="mockup">
+                    <img src="img/mockup-topo.jpg">
+              </div>
+              <div class="jumbo">
+                    <h2>Especialistas em E-commerce e Marketing Digital</h2>
+                    <p>Somos uma agência full service focada em desenvolvimento e implantação de e-commerce. Nosso objetivo é entregar projetos sob medida para o seu negócio</p>
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Fale com a gente!</a>
+              </div>
+
+              <div class="menu-inferior">
+                <img src="img/icon%20mouse.png" class="btn-proximo">
+              </div>
+          </div>
+    </div>
+
+      <div class="secao-2" id="oquefazemos">
+        <div class="container">
+
+            <div class="oque-fazemos">
+              <h2>O que fazemos</h2>
+              <p></p>
+            </div>
+            <div class="container-servicos">
+
+                <div class="conteudo-servicos is-animated">
+                  <img src="img/dev-ico.svg">
+                  <h3>Desenvolvimento de sites</h3>
+                  <p class="descricao">Desenvolvemos sites institucionais, portais, lojas virtuais, blogs, além de projetos personalizados.</p>
+                </div>
+
+                <div class="conteudo-servicos is-animated">
+                  <img src="img/dev-ecommerce-ico.svg">
+                  <h3>Desenvolvimento de e-commerce</h3>
+                  <p class="descricao">Desenvolvemos sua loja, seja ela uma nova loja ou redesign.</p>
+                </div>
+
+                <div class="conteudo-servicos is-animated">
+                  <img src="img/responsivo-ico.svg">
+                  <h3>Projetos Responsivos</h3>
+                  <p class="descricao">Criamos ou otimizamos seu projeto para que proporcione uma boa experiência em qualquer dispositivo.</p>
+                </div>
+
+                <div class="conteudo-servicos is-animated">
+                  <img src="img/marketing-ico.svg">
+                  <h3>Marketing Digital</h3>
+                  <p class="descricao">Idealizamos e planejamos estratégias integradas com recursos digitais aliados ao seu objetivo visando melhorar o posicionamento da sua marca.</p>
+                </div>
+
+                <div class="conteudo-servicos is-animated">
+                  <img src="img/ads-ico.svg">
+                  <h3>Ads</h3>
+                  <p class="descricao">Idealizamos e executamos campanhas focadas em seu objetivo levando o público certo para o seu site alcançando o número ideal de conversões</p>
+                </div>
+
+                <div class="conteudo-servicos is-animated">
+                  <img src="img/midias-sociais.svg" style="height: 85px;">
+                  <h3>Mídias Sociais</h3>
+                  <p class="descricao">Criamos o conteúdo, gerimos e engajamos todas as mídias sociais. Tornamos você uma autoridade dentro do seu segmento.</p>
+                </div>
+
+                <div class="conteudo-servicos is-animated">
+                  <img src="img/design-ico.svg">
+                  <h3>Design gráfico</h3>
+                  <p class="descricao">Criamos todo material gráfico online e offline que sua empresa necessita para o posicionamento da sua marca no mercado.</p>
+                </div>
+
+                <div class="conteudo-servicos is-animated">
+                  <img src="img/fotografia-ico.svg">
+                  <h3>Fotografia</h3>
+                  <p class="descricao">A fotografia é elemento essencial para o seu negócio! Realizamos ensaios em áreas externas, em estúdio, fotos em still para seu e-commerce e fotografamos todos os tipos de eventos.</p>
+                </div>
+            </div>
+            <div class="menu-inferior">
+              <img src="img/icon%20mouse.png" class="btn-proximo">
+            </div>
+
+        </div>
+    </div>
+
+      <div class="secao-3" id="cases">
+          <div class="container">
+
+              <div class="cases">
+                <h2>Cases</h2>
+                <p>Alguns cases de sucesso</p>
+              </div>
+
+              <div class="container-cases">
+
+
+<!--================XSTORE================-->
+
+                    <div class="conteudo-cases is-animated" data-case="xstore">
+                        <img class="img-responsive" src="img/xstore.png" 
+                           srcset="img/xstore@2x.jpg 2x, img/xstore.png 1x">
+                        <p class="descricao-case">Identidade Visual e e-commerce da loja XStore</p>
+                    </div>
+
+                    <div class="cases-slide-show xstore elemento-invisivel" data-case="xstore">
+                        <a class="fechar-btn">Fechar
+                        </a>
+                        <div class="container-slideshow">
+                            <a class="slide-anterior-btn">
+                                <i class="fa fa-chevron-left fa-4x"></i>
+                            </a>
+                            <div class="slides">
+
+                                <div class="slide">
+                                    <h4 class="slide-titulo">Teste de Título</h4>
+                                    <img class="slide-img img-responsive" src="img/xstore/1.jpg">
+                                    <p class="slide-legenda">Teste de legenda</p>
+                                </div>
+                                <div class="slide">
+                                    <h4 class="slide-titulo">Teste de Título</h4>
+                                    <img class="slide-img img-responsive" src="img/xstore/2.jpg">
+                                    <p class="slide-legenda">Teste de legenda</p>
+                                </div>
+                                <div class="slide">
+                                    <h4 class="slide-titulo">Teste de Título</h4>
+                                    <img class="slide-img img-responsive" src="img/xstore/3.jpg">
+                                    <p class="slide-legenda">Teste de legenda</p>
+                                </div>
+                                <div class="slide">
+                                    <h4 class="slide-titulo">Teste de Título</h4>
+                                    <img class="slide-img img-responsive" src="img/xstore/4.jpg">
+                                    <p class="slide-legenda">Teste de legenda</p>
+                                </div>
+                                <div class="slide">
+                                    <h4 class="slide-titulo">Teste de Título</h4>
+                                    <img class="slide-img img-responsive" src="img/xstore/5.jpg">
+                                    <p class="slide-legenda">Teste de legenda</p>
+                                </div>
+                                <div class="slide">
+                                    <h4 class="slide-titulo">Teste de Título</h4>
+                                    <img class="slide-img img-responsive" src="img/xstore/6.jpg">
+                                    <p class="slide-legenda">Teste de legenda</p>
+                                </div>
+
+                            </div>
+                            <a class="slide-posterior-btn">
+                                <i class="fa fa-chevron-right fa-4x"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+<!--================FRED================-->
+
+                  <div class="conteudo-cases is-animated" data-case="fred">
+                      <img class="img-responsive" src="img/fred.png" 
+                           srcset="img/fredexplica@2x.jpg 2x, img/fred.png 1x">
+                        <p class="descricao-case">Engajamento do Instagram do @ofredexplica</p>
+                  </div>
+
+                  <div class="cases-slide-show fred elemento-invisivel" data-case="fred">
+                        <a class="fechar-btn">Fechar
+                        </a>
+                        <div class="container-slideshow">
+                            <a class="slide-anterior-btn">
+                                <i class="fa fa-chevron-left fa-4x"></i>
+                            </a>
+                                <div class="slides">
+
+                                <div class="slide">
+                                    <h4 class="slide-titulo">Teste de Título</h4>
+                                    <img class="slide-img img-responsive" src="img/fred/1.jpg">
+                                    <p class="slide-legenda">Teste de legenda</p>
+                                </div>
+                                <div class="slide">
+                                    <h4 class="slide-titulo">Teste de Título</h4>
+                                    <img class="slide-img img-responsive" src="img/fred/2.jpg">
+                                    <p class="slide-legenda">Teste de legenda</p>
+                                </div>
+                                <div class="slide">
+                                    <h4 class="slide-titulo">Teste de Título</h4>
+                                    <img class="slide-img img-responsive" src="img/fred/3.jpg">
+                                    <p class="slide-legenda">Teste de legenda</p>
+                                </div>
+                            </div>
+                            <a class="slide-posterior-btn">
+                                <i class="fa fa-chevron-right fa-4x"></i>
+                            </a>
+                        </div>
+
+                  </div>
+
+<!--================TOYMANIA================-->
+
+                  <div class="conteudo-cases is-animated" data-case="toy">
+                      <img class="img-responsive" src="img/toy.png" 
+                           srcset="img/toymania@2x.jpg 2x, img/toy.png 1x">
+                        <p class="descricao-case">Layout do e-commerce ToyMania</p>
+                  </div>
+
+                  <div class="cases-slide-show toy elemento-invisivel" data-case="toy">
+                        <a class="fechar-btn">Fechar
+                        </a>
+                        <div class="container-slideshow">
+                            <a class="slide-anterior-btn">
+                                <i class="fa fa-chevron-left fa-4x"></i>
+                            </a>
+
+                             <div class="slides">
+
+                                <div class="slide">
+                                    <h4 class="slide-titulo">Teste de Título</h4>
+                                    <img class="slide-img img-responsive" src="img/toy/1.jpg">
+                                    <p class="slide-legenda">Teste de legenda</p>
+                                </div>
+                                <div class="slide">
+                                    <h4 class="slide-titulo">Teste de Título</h4>
+                                    <img class="slide-img img-responsive" src="img/toy/2.jpg">
+                                    <p class="slide-legenda">Teste de legenda</p>
+                                </div>
+                                <div class="slide">
+                                    <h4 class="slide-titulo">Teste de Título</h4>
+                                    <img class="slide-img img-responsive" src="img/toy/3.jpg">
+                                    <p class="slide-legenda">Teste de legenda</p>
+                                </div>
+                            </div>
+
+                            <a class="slide-posterior-btn">
+                                <i class="fa fa-chevron-right fa-4x"></i>
+                            </a>
+                        </div>
+
+                  </div>
+
+
+                  <script>     
+                        var slideIndex=1;
+                        $(".cases-slide-show .slide-anterior-btn").click(function(){
+                            slideIndex--;
+                            if(slideIndex<1){slideIndex=1;}
+
+
+                            b1slideshow(slideIndex,$(this).closest(".cases-slide-show").attr("data-case"));
+                        });
+
+                        $(".cases-slide-show .slide-posterior-btn").click(function(){
+                            $x = $(this).closest("div").find(".slides");
+                            $qtde_slides = $x.find(".slide").length;
+
+                            slideIndex++;
+                            if(slideIndex>$qtde_slides){slideIndex=$qtde_slides;}
+                             b1slideshow(slideIndex,$(this).closest(".cases-slide-show").attr("data-case"));
+                        });
+
+                        $(".conteudo-cases").click(function(){
+                            slideIndex = 1;
+                            if($(this).attr("data-case") == 'xstore'){
+                                b1slideshow(slideIndex,'xstore');
+                                $(".cases-slide-show.xstore").removeClass("elemento-invisivel");
+                                $(".cases-slide-show.xstore").addClass("elemento-visivel");
+                            }
+                            else if($(this).attr("data-case") == 'fred'){
+                                b1slideshow(slideIndex,'fred');
+                                $(".cases-slide-show.fred").removeClass("elemento-invisivel");
+                                $(".cases-slide-show.fred").addClass("elemento-visivel");
+                            }
+                            else if($(this).attr("data-case") == 'toy'){
+                                b1slideshow(slideIndex,'toy');
+                                $(".cases-slide-show.toy").removeClass("elemento-invisivel");
+                                $(".cases-slide-show.toy").addClass("elemento-visivel");
+                            }
+                        });
+
+                        $(".cases-slide-show .fechar-btn").click(function(){
+                           var $fechar_div = $(this).closest("div");
+                           $fechar_div.removeClass("elemento-visivel");
+                           $fechar_div.addClass("elemento-invisivel");
+                        });
+
+
+                  </script>
+
+
+              </div>
+
+              <div class="menu-inferior">
+                <img src="img/icon%20mouse.png" class="btn-proximo">
+              </div>
+          </div>
+
+      </div>
+      
+      <div class="secao-4">
+          <div class="container">
+
+              <div class="oque-dizem">
+                <h2>O que dizem sobre nós</h2>
+                <p>Modéstia à parte...</p>
+              </div>
+
+              <div class="container-opinioes">
+                  <div class="conteudo-opinioes is-animated">
+                      <img src="img/face.jpg"
+                           srcset="img/face@2x.jpg 2x, img/face.jpg 1x">
+                      <p class="depoimento">Volutpat ullamcorper litora nunc tellus interdum placerat aenean lobortis praesent, pulvinar ullamcorper ultrices nisl eros curae maecenas id a, dictumst rutrum facilisis curabitur faucibus ipsum tempor ac, tincidunt mi tellus himenaeos laoreet quisque semper venenatis. dolor feugiat praesent nulla mi elementum fringilla, massa aliquet cras bibendum condimentum</p>
+                      <h3 class="nome-opinioes">Fred Sowyer</h3>
+                      <p class="profissao-opinioes">Psicólogo, Youtuber e Influencer</p>
+                  </div>
+
+                  <div class="conteudo-opinioes is-animated">
+                      <img src="img/face.jpg"
+                           srcset="img/face@2x.jpg 2x, img/face.jpg 1x">
+                      <p class="depoimento">Volutpat ullamcorper litora nunc tellus interdum placerat aenean lobortis praesent, pulvinar ullamcorper ultrices nisl eros curae maecenas id a, dictumst rutrum facilisis curabitur faucibus ipsum tempor ac, tincidunt mi tellus himenaeos laoreet quisque semper venenatis. dolor feugiat praesent nulla mi elementum fringilla, massa aliquet cras bibendum condimentum</p>
+                      <h3 class="nome-opinioes">Fred Sowyer</h3>
+                      <p class="profissao-opinioes">Psicólogo, Youtuber e Influencer</p>
+                  </div>
+
+
+                  <div class="conteudo-opinioes is-animated">
+                      <img src="img/face.jpg"
+                           srcset="img/face@2x.jpg 2x, img/face.jpg 1x">
+                      <p class="depoimento">Volutpat ullamcorper litora nunc tellus interdum placerat aenean lobortis praesent, pulvinar ullamcorper ultrices nisl eros curae maecenas id a, dictumst rutrum facilisis curabitur faucibus ipsum tempor ac, tincidunt mi tellus himenaeos laoreet quisque semper venenatis. dolor feugiat praesent nulla mi elementum fringilla, massa aliquet cras bibendum condimentum</p>
+                      <h3 class="nome-opinioes">Fred Sowyer</h3>
+                      <p class="profissao-opinioes">Psicólogo, Youtuber e Influencer</p>
+                  </div>
+              </div>     
+
+              <div class="menu-inferior">
+                <img src="img/icon%20mouse.png" class="btn-proximo">
+              </div>
+
+          </div>
+      </div>
+
+      <div class="secao-5" id="quemsomos">
+            <div class="container">
+
+                <div class="quem-faz">
+                    <h2>Quem faz a B1</h2>
+                    <p>Nossa equipe do bem</p>
+                </div>
+
+                <div class="container-equipe">
+
+                    <div class="conteudo-equipe is-animated">
+                      <img src="img/CEO.gif">
+
+                      <h3 class="nome-equipe">Bernard Viana</h3>
+                      <p class="cargo-equipe">CEO</p>
+
+                      <p class="depoimento-equipe">Bernard é especialista em Marketing Digital e possui ampla experiência em e-commerce adquirida durante os anos que atuou na Xtech Commerce e Vtex. Idealizador e líder da B1, é responsável por organizar o time para gerar resultados.</p>
+
+                    </div>
+
+                    <div class="conteudo-equipe is-animated">
+                      <img src="img/CEO.gif">
+
+                      <h3 class="nome-equipe">Flávio Barros</h3>
+                      <p class="cargo-equipe">Diretor de Criação</p>
+
+                      <p class="depoimento-equipe">Especialista em Design e já atuou em diversas agências de Marketing e empresas privadas. Com seu pensamento totalmente fora da caixinha, finalmente, conseguiu realizar seu sonho de atuar em sua própria empresa como co-fundador da Agência B1.</p>
+
+                    </div>
+
+                    <div class="conteudo-equipe is-animated">
+                      <img src="img/Gerente.gif">
+
+                      <h3 class="nome-equipe">Luiza Marroig</h3>
+                      <p class="cargo-equipe">Gerente de Projetos</p>
+
+                      <p class="depoimento-equipe">Apaixonada por Marketing Digital, Luiza é formada em Publicidade e Propaganda  e nossa guerreira no time de atendimento. É responsável pela gestão e produção de todos os nossos projetos.</p>
+
+                    </div>
+
+                    <div class="conteudo-equipe is-animated">
+                      <img src="img/CEO.gif">
+
+                      <h3 class="nome-equipe">Leonardo de Oliveira</h3>
+                      <p class="cargo-equipe">Desenvolvedor Sênior</p>
+
+                      <p class="depoimento-equipe">Analista de Sistemas, desenvolvedor fullstack. Focado em desenvolver soluções e entregar valor com rapidez, sem se esquecer das boas práticas e eficiência.</p>
+
+                    </div>
+                </div>
+
+                <div class="menu-inferior">
+                    <img src="img/icon%20mouse.png" class="btn-proximo">
+                </div>
+
+            </div>
+      </div>
+
+      <div class="secao-6" id="contato">
+        <div class="container">
+
+            <div class="mensagens-retorno">
+                <div class="alert alert-success alert-invisivel">
+                    <button type="button" class="close"><span>&times;</span></button>
+                    <strong>Sucesso!</strong> Recebemos a sua mensagem. Obrigado!
+                </div>
+
+                <div class="alert alert-danger alert-invisivel">
+                    <button type="button" class="close"><span>&times;</span></button>
+                    <p class="mensagem-erro">
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="contatos">
+                <h2>Contato</h2>
+                <p>Não importa o tamanho do desafio</p>
+                <div class="contatos-telefones">
+                    <h6 class="whatsapp">21 96576-8885</h6>
+                    <h6 class="email-contato">contato@agenciab1.com.br</h6>
+                    <h6 class="telefones">21 96576-8885 | 21 97979-6508 | 21 967451591</h6>
+                </div>21
+            </div>
+
+            <form action="/testes/php/mail2.php" method="post" id="formulario-contato">
+
+                <input type="text" name="form_nome" placeholder="Insira o seu nome">
+
+                <input type="email" name="form_email" placeholder="Insira o seu e-mail" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$">
+
+                <div data-tip="Insira somente números, com o DDD. Ex. 21988887777.">
+                    <input type="tel" name="form_telefone" placeholder="Insira o seu telefone." pattern="[0-9]{2}[\s]?[0-9]{4,5}[0-9]{4}">
+                </div>
+
+                <select class="form-control" name="form_projeto" title="Selecione o seu desafio">
+                    <optgroup>
+                        <option id="ads">Ads</option>
+                        <option id="designgrafico">Design Gráfico</option>
+                        <option id="ecommerce">Desenvolvimento E-commerce</option>
+                        <option id="site">Desenvolvimento de Site</option>
+                        <option id="fotografia">Fotografia</option>
+                        <option id="marketingdigital">Marketing Digital</option>
+                        <option id="midiassociais">Mídias Sociais</option>
+                    </optgroup>
+                </select>
+
+                <textarea name="form_mensagem" id="form_mensagem" placeholder="Insira sua mensagem"></textarea>
+
+                <a id="contato-form-btn">Enviar mensagem</a>
+                <script>
+                    var status,a;
+                    $('#contato-form-btn').click(function(){
+                         $.post("/testes/php/mail2.php",$( "#formulario-contato").serialize(),function(data){
+                             status = data;
+                             a = JSON.parse(status);
+                             $(".alert.alert-success").addClass("alert-invisivel");
+                             $(".alert.alert-danger").addClass("alert-invisivel");
+                             if(a.success){
+                                 console.log("Sucesso");
+                                 $(".alert.alert-success").removeClass("alert-invisivel");
+                             }
+                             else{
+                                 console.log("Erro");
+                                 $(".mensagem-erro").html("<strong>Erro!</strong> Identificamos os seguintes erros no envio da mensagem:");
+                                 for(var i=0;i<a.errors.length;i++){
+                                    $(".mensagem-erro").append("<br/>-"+a.errors[i]);
+                                 }
+                                 $(".alert.alert-danger").removeClass("alert-invisivel");
+
+
+
+                             }
+                         });
+
+                    });
+
+                    $("button.close").click(function(){
+                       $(".alert").addClass("alert-invisivel");
+                    });
+                </script>
+            </form>
+        </div>    
+
+      </div>
+      <footer>
+            <img src="img/logo.svg"
+                 srset="" class="logo-footer" />
+
+            <address>
+                <p>&copy;2018 - Agência B1 todos os direitos reservados</p>
+            </address>
+
+            <div class="redes-sociais-footer">
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+            </div>
+      </footer>
+            
+      <script src="js/bootstrap.js"></script>
+  </body>
+</html>
