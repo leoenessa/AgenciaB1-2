@@ -23,6 +23,12 @@
       
   </head>
   <body>
+      <div class="wp-container">
+          <img class="wp-logo" src="img/whatsapp-logo.svg">
+          <span class="wp-bubble">
+              Estamos no Whatsapp!
+          </span>
+      </div>
       <ul class="menu menu-principal-mobile320 menu-invisivel">
             <a class="fechar320-btn"><i class="fa fa-times"></i></a>
             <li><a href="" class="toQuemsomos" data-target="#quemsomos">Quem somos</a></li>
@@ -127,7 +133,7 @@
                   <div class="mockup" data-aos="fade-left">
                         <img src="img/mockup-topo.jpg">
                   </div>
-                  <div class="jumbo">
+                  <div data-aos="fade-down" class="jumbo">
                         <h2>Especialistas em E-commerce e Marketing Digital</h2>
                         <p>Somos uma agência full service focada em desenvolvimento e implantação de e-commerce. Nosso objetivo é entregar projetos sob medida para o seu negócio</p>
                         <a class="btn btn-primary btn-lg" href="#" role="button">Fale com a gente!</a>
@@ -135,75 +141,23 @@
               </div>
               <div class="menu-inferior">
                 <img src="img/icon%20mouse.png" class="btn-proximo">
-                  <img class="wp-logo" src="img/whatsapp-logo.svg">
-                <span class="wp-bubble">
-                    Estamos no Whatsapp!
-                </span>
-                
               </div>
           </div>
     </div>
 
       <div class="secao-2" id="oquefazemos">
         <div class="container">
-
-            <div class="oque-fazemos">
-              <h2>O que fazemos</h2>
-              <p></p>
-            </div>
-            <div class="container-servicos">
-
-                <div class="conteudo-servicos is-animated">
-                  <img src="img/dev-ico.svg">
-                  <h3>Desenvolvimento de sites</h3>
-                  <p class="descricao">Desenvolvemos sites institucionais, portais, lojas virtuais, blogs, além de projetos personalizados.</p>
-                </div>
-
-                <div class="conteudo-servicos is-animated">
-                  <img src="img/dev-ecommerce-ico.svg">
-                  <h3>Desenvolvimento de e-commerce</h3>
-                  <p class="descricao">Desenvolvemos sua loja, seja ela uma nova loja ou redesign.</p>
-                </div>
-
-                <div class="conteudo-servicos is-animated">
-                  <img src="img/responsivo-ico.svg">
-                  <h3>Projetos Responsivos</h3>
-                  <p class="descricao">Criamos ou otimizamos seu projeto para que proporcione uma boa experiência em qualquer dispositivo.</p>
-                </div>
-
-                <div class="conteudo-servicos is-animated">
-                  <img src="img/marketing-ico.svg">
-                  <h3>Marketing Digital</h3>
-                  <p class="descricao">Idealizamos e planejamos estratégias integradas com recursos digitais aliados ao seu objetivo visando melhorar o posicionamento da sua marca.</p>
-                </div>
-
-                <div class="conteudo-servicos is-animated">
-                  <img src="img/ads-ico.svg">
-                  <h3>Ads</h3>
-                  <p class="descricao">Idealizamos e executamos campanhas focadas em seu objetivo levando o público certo para o seu site alcançando o número ideal de conversões</p>
-                </div>
-
-                <div class="conteudo-servicos is-animated">
-                  <img src="img/midias-sociais.svg" style="height: 85px;">
-                  <h3>Mídias Sociais</h3>
-                  <p class="descricao">Criamos o conteúdo, gerimos e engajamos todas as mídias sociais. Tornamos você uma autoridade dentro do seu segmento.</p>
-                </div>
-
-                <div class="conteudo-servicos is-animated">
-                  <img src="img/design-ico.svg">
-                  <h3>Design gráfico</h3>
-                  <p class="descricao">Criamos todo material gráfico online e offline que sua empresa necessita para o posicionamento da sua marca no mercado.</p>
-                </div>
-
-                <div class="conteudo-servicos is-animated">
-                  <img src="img/fotografia-ico.svg">
-                  <h3>Fotografia</h3>
-                  <p class="descricao">A fotografia é elemento essencial para o seu negócio! Realizamos ensaios em áreas externas, em estúdio, fotos em still para seu e-commerce e fotografamos todos os tipos de eventos.</p>
-                </div>
-            </div>
-            <div class="menu-inferior">
-              <img src="img/icon%20mouse.png" class="btn-proximo">
-            </div>
+            <div class="conteudo-big">
+                  <div class="macbook-clay" data-aos="fade-left">
+                        <img src="img/macbook-pro-clay.jpg">
+                  </div>
+                  <div data-aos="fade-down" class="jumbo">
+                        <h3> E-commerce</h3>
+                        <h2>Faça seu negócio dar certo! Torne-o digital e venda muita mais!</h2>
+                        <p>Nossos projetos são voltados para aquilo que realmente importa: a experiência do usuário. Trabalhamos com as melhores plataformas, criamos projetos responsivos e com design diferenciado, ideal para sua marca.</p>
+                        <a class="btn btn-primary btn-lg" href="#" role="button">Dê o primeiro passo!</a>
+                  </div>
+              </div>
 
         </div>
     </div>
@@ -619,7 +573,13 @@
             
       <script src="js/bootstrap.js"></script>
       <script>
-        AOS.init();
+        var triggerMobile = window.matchMedia("(min-width: 1440px)");
+        var leo = true;
+        if(triggerMobile.matches){leo=false;}
+      
+        AOS.init({
+          disable: leo,
+        });
       </script>
   </body>
 </html>
