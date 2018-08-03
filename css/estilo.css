@@ -45,6 +45,7 @@ p::selection{
 .top-navigation{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 25px 10px;
     margin-bottom: 29px;
     width: 100%;
@@ -137,17 +138,6 @@ p::selection{
 .menu-principal{
     display: none;
 }
-.menu-principal li{
-    text-align: center;
-    margin-left: 27px;
-}
-
-.menu-principal li a{
-    color: #fff;
-    font-size: 15px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
 
 .menu a.menu-whatsapp{
     border-radius: 30px;
@@ -235,42 +225,16 @@ p::selection{
     color: #fff;
     text-transform:uppercase;
     margin-top: 20px;
+    margin-bottom: 56px;
 }
 
 .jumbo a:hover{
     background-color: #d7ec5c;
     color: #340c46;
 }
+
 .menu-inferior{
-    width: 100%;
-    text-align: center;
-    color: #fff;
-    font-size: 50px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     display: none;
-}
-
-
-@keyframes btn-proximo-anim{
-    0%{
-        transform: translateY(0);
-    }
-    50%{
-        transform: translateY(-100%);
-    }
-    100%{
-        transform: translateY(0);
-    }
-}
-
-.menu-inferior, .menu-inferior .btn-proximo{
-    cursor: pointer;
-}
-
-.menu-inferior:hover .btn-proximo{
-    animation: 1s infinite ease-out btn-proximo-anim;
 }
 
 /*================SECAO-2================*/
@@ -934,16 +898,210 @@ footer .redes-sociais-footer a:hover{
 @media (min-width: 540px){ 
 
 }
+
 /*
 ==============
-FULL DESKTOP
+768px
+==============
+*/
+
+@media (min-width: 768px){ 
+    .secao-1{
+        min-height: 0;
+    }
+    
+    .container{
+        width: 100% !important;
+    }
+    
+    .logotipo img {
+        width: 325px;
+        height: auto;
+    }
+    
+    .top-navigation .container-menu-principal-mobile i{
+        font-size: 30px;
+    }
+    
+}
+
+/*
+==============
+1024px
+==============
+*/
+
+@media (min-width: 1024px){ 
+    
+    .top-navigation .container-menu-principal-mobile i{
+        font-size: 35px;
+    }
+    
+}
+
+
+/*
+==============
+FULL DESKTOP 1440px
 ==============
 */
 
 @media (min-width:1440px){
-.container{
+    
+    .top-navigation{
+        padding: 32px 90px;
+    }
+    .top-navigation .container-menu-principal-mobile{
+        display: none;
+    }
+    
+    .logotipo{
+        width: 35%;
+    }
+    
+    .logotipo img{
+        width: 186px;
+        height: auto;
+    }
+    
+    .menu-principal{
+        display: block;
+    }
+    
+    .menu-principal li{
+        text-align: center;
+        margin-left: 25px;
+    }
+
+    .menu-principal li a{
+        font-size: 15px;
+        font-weight: normal;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+    .secao-1 .conteudo-big{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0 77px 0 90px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .jumbo{
+        padding: 0;
+        text-align: left;
+        width: 428px;
+        height: 460px;
+    }
+    
+    .jumbo h2, .jumbo p{
+        text-align: left;
+    }
+    
+    .jumbo h2{
+        font-size: 50px;
+        margin-bottom: 23px;
+    }
+    
+    .jumbo p{
+        font-size: 23px;
+        line-height: 1.22;
+        color: #2a283e;
+    }
+    
+    .jumbo a{
+        width: 260px;
+        height: 60px;
+    }
+    
+    .mockup{
+        width: 783px;
+    }
+    
+    .menu-inferior{
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        font-size: 30px;
+        display: block;
+        margin-top: 40px;
+        padding: 0 70px 0 90px;
+    }
+
+
+    @keyframes btn-proximo-anim{
+        0%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateY(-100%);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+
+    .menu-inferior, .menu-inferior .btn-proximo{
+        cursor: pointer;
+/*        width: 22px;*/
+    }
+
+    .menu-inferior:hover .btn-proximo{
+        animation: 1s infinite ease-out btn-proximo-anim;
+    }
+
+      .wp-bubble{
+        content: 'Estamos no Whatsapp!';
+        color: #909090;
+        line-height: 1.07;
+        padding: 15px 10px 15px 10px;
+        font-size: 15px;
+        background-color: #fff;
+        border: 1px solid #979797;
+        border-radius: 5px;
+        box-shadow: 5px 7px 11px 0 rgba(0, 0, 0, 0.4);
+        float: right;
+        margin-right: 15px;
+        position: relative;
+        top: 10px;
+    }
+    
+    .wp-bubble::after{
+        border-left: 12px solid #fff;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        content: "";
+        position: absolute;
+        right: -12px;
+        top: 16px;
+    }
+    
+    .wp-logo{
+        border: 20px solid #2aa71b;
+        border-radius: 50px;
+        background-color: #2aa71b;
+        box-shadow: 5px 7px 11px 0 rgba(0, 0, 0, 0.4);
+        transform: translateY(-10%);
+        display: inline-block;
+        float: right;
+    }
+    
+  
     
 }
 
-    
+/*
+==============
+FULL DESKTOP 1920px
+==============
+*/
+
+@media (min-width:1920px){
+    .mockup{
+        width: 1200px;
+    }
+       
 }
