@@ -4,10 +4,9 @@ DEFAULT MOBILE
 ==============
 */
 
-
 html, body{
     font-family: 'Lato', sans-serif !important;
-    overflow-x: hidden !important;
+  
 }
 
 p::selection{
@@ -15,9 +14,13 @@ p::selection{
     background-color: #bed630;
 }
 
+.wp-container{
+    display: none;
+}
+
 .secao-1{
     background-color: #bfd730;
-    min-height: 110vh;
+   /* min-height: 110vh;*/
 }
 
 
@@ -37,8 +40,8 @@ p::selection{
     flex-direction: column;
     justify-content: flex-start;
     margin: 0;
-    padding: 0;
-    margin-bottom: 5%;
+    padding: 0 10px;
+    /*margin-bottom: 5%;*/
     text-align: center;
 }
 
@@ -189,7 +192,8 @@ p::selection{
 
 .jumbo{
     width: 100%;
-    padding: 0 10px;
+    padding: 0;
+    text-align: center;
 }
 
 .jumbo h2{
@@ -239,12 +243,47 @@ p::selection{
 
 /*================SECAO-2================*/
 .secao-2{
-    background-color: #fbfbfb;
+    background-color: #2b226d;;
     height: 100%;
     /*padding-top: 48px;*/
 }
 
-.secao-2 .container, .secao-3 .container, .secao-4 .container, .secao-5 .container, .secao-6 .container{
+.secao-2 .container{
+    padding-top: 55px;
+}
+
+.macbook-clay{
+    width: 100%;
+}
+
+.macbook-clay img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.secao-2 .jumbo h3{
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.secao-2 .jumbo p{
+    color: #fff;
+    line-height: 1.31;
+    font-weight: normal;
+}
+
+.secao-2 .jumbo a{
+    background-color: #bfd730;
+    margin-bottom: 35px;
+    color: #2b226d;
+    border: 0;
+}
+
+.secao-3 .container, .secao-4 .container, .secao-5 .container, .secao-6 .container{
     height: 100%;
     padding-top: 20px;
     display: flex;
@@ -1053,6 +1092,13 @@ FULL DESKTOP 1440px
         animation: 1s infinite ease-out btn-proximo-anim;
     }
 
+    .wp-container{
+        display: block;
+        position: fixed;
+        bottom: 10px;
+        right: 25px;
+        z-index: 10;
+    }
       .wp-bubble{
         content: 'Estamos no Whatsapp!';
         color: #909090;
