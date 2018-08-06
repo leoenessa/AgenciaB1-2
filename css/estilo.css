@@ -358,7 +358,7 @@ p::selection{
 /*================SECAO-3================*/
 
 .secao-3{
-    background-color: #333539;   
+    background-color: #fff;   
 }
 
 .secao-3 .cases{
@@ -367,10 +367,10 @@ p::selection{
 }
 
 .secao-3 .cases h2{
-    font-size: 20px;
-    font-weight: 900;
-    color: #fff;
-    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1;
+    color: #2a283e;;
     text-align: center;
 }
 
@@ -1020,6 +1020,17 @@ FULL DESKTOP 1440px
         text-decoration: none;
         text-transform: uppercase;
     }
+
+    .secao-1{
+        width: 100%;
+    }
+
+    .secao-1 .container{
+        padding: 0;
+        height: 100%;
+        width: 1440px !important;
+        margin: auto;
+    }
     
     .secao-1 .conteudo-big{
         display: flex;
@@ -1136,7 +1147,7 @@ FULL DESKTOP 1440px
     }
     
     .secao-2{
-        height: 890px;
+        height: 850px;
         width: 100%;
     }
 
@@ -1168,7 +1179,7 @@ FULL DESKTOP 1440px
 
     .macbook-clay img{
         width: 900px;
-        transform: translateX(-5%);
+        transform: translateX(-15%);
     }
     
   
