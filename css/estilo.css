@@ -267,7 +267,7 @@ p::selection{
     letter-spacing: 8px;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 30px;
+    margin-top: 5px;
 }
 
 .secao-2 .jumbo p{
@@ -950,7 +950,7 @@ footer .redes-sociais-footer a:hover{
     }
     
     .container{
-        width: 100% !important;
+        width: 100%;
     }
     
     .logotipo img {
@@ -1133,6 +1133,42 @@ FULL DESKTOP 1440px
         transform: translateY(-10%);
         display: inline-block;
         float: right;
+    }
+    
+    .secao-2{
+        height: 890px;
+        width: 100%;
+    }
+
+    .secao-2 .container{
+        padding: 0;
+        padding-top: 165px;
+        height: 100%;
+        width: 1440px !important;
+        margin: auto;
+    }
+
+    .secao-2 .conteudo-big{
+        display: flex;
+        /*padding: 0 77px 0 90px;*/
+        justify-content: flex-start;
+    }
+
+    .secao-2 .jumbo{
+        width: 490px;
+    }
+
+    .secao-2 .jumbo h3{
+        text-align: left;
+    }
+
+    .macbook-clay{
+        width: 815px;
+    }
+
+    .macbook-clay img{
+        width: 900px;
+        transform: translateX(-5%);
     }
     
   
