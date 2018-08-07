@@ -249,7 +249,14 @@ p::selection{
 }
 
 .secao-2 .container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0 10px;
     padding-top: 55px;
+    text-align: center;
 }
 
 .macbook-clay{
@@ -281,14 +288,6 @@ p::selection{
     margin-bottom: 35px;
     color: #2b226d;
     border: 0;
-}
-
-.secao-3 .container, .secao-4 .container, .secao-5 .container, .secao-6 .container{
-    height: 100%;
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
 }
 
 .secao-2 .oque-fazemos{
@@ -358,15 +357,27 @@ p::selection{
 /*================SECAO-3================*/
 
 .secao-3{
-    background-color: #fff;   
+    background-color: #fff; 
+    height: 100%;
 }
 
-.secao-3 .cases{
-    width: 100%;
+.secao-3 .container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0 10px;
+    padding-top: 28px;
     text-align: center;
+} 
+
+.secao-3 .cases{
+   
 }
 
 .secao-3 .cases h2{
+    margin: 0;
     font-size: 50px;
     font-weight: bold;
     line-height: 1;
@@ -375,10 +386,13 @@ p::selection{
 }
 
 .secao-3 .cases p{
-    font-size: 12px;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.75;
     text-align: center;
-    color: #fff;
+    color: #333539;
+    padding-top: 5px;
+    margin-bottom: 19px;
 }
 
 .secao-3 .container-cases{
@@ -386,15 +400,17 @@ p::selection{
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: 5%;
+    margin-bottom: 40px;
 }
 
 .secao-3 .container-cases .conteudo-cases{
     width: 100%;
-    margin-top: 40px;
+    margin: 0;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
     transition: all .5s ease;
     cursor: pointer;
     animation-fill-mode: backwards;
@@ -417,12 +433,13 @@ p::selection{
 }
 
 .secao-3 .container-cases .conteudo-cases p{
+    margin: 0;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: normal;
     text-align: center;
-    color: #fff;
-    width: 100%;
-    margin-top: 19px;
+    color: #2b2b2b;
+    width: 80%;
+    margin-top: 14px;
 }
 
 .cases-slide-show{
@@ -502,196 +519,126 @@ p::selection{
 
 /*================SECAO-4================*/
 
-.secao-4 .oque-dizem{
-    width: 100%;
-    text-align: center;
+.secao-4{
+    background-color: #3a3c3e;
+    height: 100%;
 }
 
-.secao-4 .oque-dizem h2{
-    font-size: 25px;
-    font-weight: 900;
-    color: #333539;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.secao-4 .oque-dizem p{
-    font-size: 22px;
-    font-weight: 300;
-    text-align: center;
-    color: #333539;
-}
-
-.secao-4 .container-opinioes{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-top: 15%;
-}
-
-.secao-4 .container-opinioes .conteudo-opinioes{
-    width: 100%;
-    height: auto;
-    min-height: 300px;
-    margin-top: 15%;
+.secao-4 .container{
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    transition: all .5s ease;
-    background-color: #fff;
-    box-shadow: 0 0 21px 5px rgba(0, 0, 0, 0.08);
-    position: relative;
-    padding: 2em;
-    padding-top: 4em;
-}
-
-.secao-4 .container-opinioes .conteudo-opinioes:first-child{
-    margin-left: 0;
-}
-
-.secao-4 .container-opinioes .conteudo-opinioes img{
-    width: 25%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    
-}
-
-.secao-4 .container-opinioes .conteudo-opinioes p.depoimento{
-    font-size: 15px;
-    font-weight: 300;
-    text-align: center;
-    color: #909090;
-    line-height: 1.47;
-    text-align: center;
-    width: 100%;
-    margin-top: 19px;
-    font-style: italic;
-}
-
-.secao-4 .container-opinioes .conteudo-opinioes p.depoimento::before{
-    font-family: sans-serif;
-    content: open-quote;
-    font-size: 115px;
-    font-weight: bold;
-    color: #c8d400;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.secao-4 .container-opinioes .conteudo-opinioes h3.nome-opinioes{
-    text-align: center;
-    font-size: 17px;
-    font-weight: bold;
-    line-height: 1.47;
     margin: 0;
-    margin-top: 28px;
-    color: #333539;
-}
-
-.secao-4 .container-opinioes .conteudo-opinioes p.profissao-opinioes{
+    padding: 0 10px;
+    padding-top: 29px;
     text-align: center;
-    font-size: 15px;
-    line-height: 1.67;
-    color: #909090;
+} 
+
+.fotografia{
+    margin-bottom: 22px;
 }
 
+.fotografia img{
+    width: 100%;
+    object-fit: contain;
+    max-width: 688px;
+}
+
+.secao-4 .jumbo h3{
+    margin: 0;
+    margin-bottom: 11px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: normal;
+    letter-spacing: 8px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.secao-4 .jumbo h2{
+    margin: 0;
+}
+
+.secao-4 .jumbo p{
+    margin-top: 22px;
+    font-size: 16px;
+    line-height: 1.44;
+    color: #fff;
+    text-align: center;
+}
+
+.secao-4 .jumbo a{
+    background-color: #bfd730;
+    color: #2b226d;
+    border: 0;
+}
 /*================SECAO-5================*/
 
 .secao-5{
-    /*padding-top: 5%;*/
-    margin-bottom: 5%;
+    height: 100%;
+    background-color: #bfd730;
 }
 
-.secao-5 .quem-faz{
-    width: 100%;
-    text-align: center;
-}
-
-.secao-5 .quem-faz h2{
-    font-size: 25px;
-    font-weight: 900;
-    color: #333539;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.secao-5 .quem-faz p{
-    font-size: 22px;
-    font-weight: 300;
-    text-align: center;
-    color: #333539;
-}
-
-.secao-5 .container-equipe{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-top: 10%;
-}
-
-.secao-5 .container-equipe .conteudo-equipe{
-    width: 100%;
-    min-height: 300px;
-    height: auto;
-    margin-top: 30%;
-/*    margin-left: 22px;*/
+.secao-5 .container{
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    transition: all .5s ease;
-    background-color: #fff;
-    box-shadow: 0 0 21px 5px rgba(0, 0, 0, 0.08);
-    position: relative;
-    padding: 80px 30px;
-}
-
-.secao-5 .container-equipe .conteudo-equipe:first-child{
-    margin-left: 0;
-}
-
-.secao-5 .container-equipe .conteudo-equipe img{
-    width: 50%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    
-}
-
-.secao-5 .container-equipe .conteudo-equipe p.depoimento-equipe{
-    font-size: 15px;
-    font-weight: 300;
-    text-align: center;
-    color: #909090;
-    line-height: 1.47;
-    text-align: center;
-    width: 100%;
-    margin-top: 19px;
-}
-
-.secao-5 .container-equipe .conteudo-equipe h3.nome-equipe{
-    text-align: center;
-    font-size: 17px;
-    font-weight: bold;
-    line-height: 1.47;
     margin: 0;
-    margin-top: 10%;
-    color: #333539;
-}
-
-.secao-5 .container-equipe .conteudo-equipe p.cargo-equipe{
+    padding: 0;
+    padding-top: 37px;
     text-align: center;
-    font-size: 15px;
-    line-height: 1.67;
-    color: #909090;
-    font-style: italic;
+} 
+
+.insta{
+    margin: 0px;
 }
 
+.insta .insta-img{
+    width: 100%;
+    object-fit: contain;
+    max-width: 688px;
+}
+
+.secao-5 .jumbo{
+    padding: 0 20px;
+}
+.secao-5 .jumbo h3{
+    margin: 0;
+    margin-bottom: 12px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: normal;
+    letter-spacing: 8px;
+    text-align: center;
+    color: #2a283e;
+    text-transform: uppercase;
+}
+
+.secao-5 .jumbo h2{
+    margin: 0;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+}
+
+.secao-5 .jumbo p{
+    margin-top: 13px;
+    font-size: 16px;
+    line-height: 1.44;
+    color: #2a283e;
+    text-align: center;
+}
+
+.secao-5 .jumbo a{
+    background-color: #0056ff;
+    color: #fff;
+    border: 0;
+}
 /*================SECAO-6================*/
 
 .secao-6{
@@ -962,6 +909,14 @@ footer .redes-sociais-footer a:hover{
         font-size: 30px;
     }
     
+    .secao-1 .container, .secao-2 .container, .secao-3 .container,
+    .secao-4 .container,
+    .secao-5 .container,
+    .secao-6 .container{
+        width: 768px;
+        margin: auto;
+    }
+    
 }
 
 /*
@@ -1025,7 +980,7 @@ FULL DESKTOP 1440px
         width: 100%;
     }
 
-    .secao-1 .container{
+    .secao-1 .container, .secao-2 .container, .secao-3 .container, .secao-4 .container, .secao-5 .container, .secao-6 .container {
         padding: 0;
         height: 100%;
         width: 1440px !important;
@@ -1152,11 +1107,7 @@ FULL DESKTOP 1440px
     }
 
     .secao-2 .container{
-        padding: 0;
         padding-top: 165px;
-        height: 100%;
-        width: 1440px !important;
-        margin: auto;
     }
 
     .secao-2 .conteudo-big{
@@ -1182,7 +1133,116 @@ FULL DESKTOP 1440px
         transform: translateX(-15%);
     }
     
-  
+    .secao-3 .container{
+        padding-top: 49px;
+    }
+    
+    .secao-3 .cases p{
+        font-size: 23px;
+        line-height: 1.22;
+    }
+    
+    .secao-3 .container-cases{
+        padding: 0 90px;
+        justify-content: space-around;
+    }
+    
+    .secao-3 .container-cases .conteudo-cases{
+        width: 49%;
+    }
+    
+    .secao-4{
+        height: 890px;
+    }
+    
+    .secao-4 .conteudo-big{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0 120px 0 90px;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    
+    .secao-4 .jumbo{
+        width: 400px;
+    }
+    
+    .secao-4 .jumbo h3,.secao-4 .jumbo h2, .secao-4 .jumbo p,.secao-4 .jumbo a{
+        text-align: left;
+    }
+    
+    .secao-4 .jumbo p{
+        font-size: 23px;
+        line-height: 1.22;
+    }
+    
+    .secao-4 .jumbo a{
+        margin-top: 40px;
+    }
+    
+    .secao-4 .fotografia img{
+        width: 725px;
+    }
+    
+    .secao-5{
+        height: 769px;
+        max-height: 769px;
+        padding-top: 66px;
+    }
+    
+    .secao-5 .conteudo-big{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0 120px 0 0;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    
+    .secao-5 .jumbo{
+        width: 521px;
+    }
+    
+    .insta{
+        position: relative;
+    }
+    
+    .heart1{
+        position: absolute;
+        top: -40px;
+        right: 10px;
+        width: 20%;
+    }
+    
+    .heart2{
+        position: absolute;
+        top: 330px;
+        right: -30px;
+        width: 20%;
+    }
+    
+    .secao-5 .jumbo h3,.secao-5 .jumbo h2, .secao-5 .jumbo p,.secao-5 .jumbo a{
+        text-align: left;
+    }
+    
+    .secao-5 .jumbo h3{
+        color: #fff;    
+    }
+    
+    .secao-5 .jumbo h2{
+        font-size: 50px;  
+    }
+    
+    .secao-5 .jumbo p{
+        font-size: 23px;
+        line-height: 1.22;
+    }
+    
+    .secao-5 .jumbo a{
+        margin-top: 20px;
+    }
+    
     
 }
 
