@@ -639,15 +639,83 @@ p::selection{
     color: #fff;
     border: 0;
 }
+
+.secao-5 .heart1{
+    display: none;
+}
+    
+.secao-5 .heart2{
+    display: none;
+}
+
 /*================SECAO-6================*/
 
 .secao-6{
-    background-color: #333539;
+    background-color: #2b226d;
+    height: 100%;
 }
 
 .secao-6 .container{
-/*    width: 900px;*/
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    text-align: center; 
 }
+
+.secao-6 .jumbo{
+    padding: 0 10px;
+}
+
+.secao-6 .jumbo h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 8px;
+    margin: 0;
+    margin-top: 22px;
+    margin-bottom: 20px;
+}
+
+.secao-6 .jumbo h2{
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.secao-6 .jumbo p{
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.44;
+    text-align: center;
+    letter-spacing: normal;
+}
+
+.secao-6 .jumbo a{
+    margin: 0;
+    margin-top: 23px;
+    background-color: #bfd730;
+    border: 0;
+    color: #2b226d;
+}
+
+.adwords{
+    margin: 0px;
+    margin-top: 38px;
+    overflow-x: hidden;
+}
+
+.adwords img{
+    width: 141%;
+    object-fit: contain;
+    transform: translateX(-29%);
+}
+
+
+
+/*================SECAO-7================*/
 
 .secao-6 .contatos{
     width: 100%;
@@ -1208,20 +1276,6 @@ FULL DESKTOP 1440px
         position: relative;
     }
     
-    .heart1{
-        position: absolute;
-        top: -40px;
-        right: 10px;
-        width: 20%;
-    }
-    
-    .heart2{
-        position: absolute;
-        top: 330px;
-        right: -30px;
-        width: 20%;
-    }
-    
     .secao-5 .jumbo h3,.secao-5 .jumbo h2, .secao-5 .jumbo p,.secao-5 .jumbo a{
         text-align: left;
     }
@@ -1240,6 +1294,78 @@ FULL DESKTOP 1440px
     }
     
     .secao-5 .jumbo a{
+        margin-top: 20px;
+    }
+    
+    .secao-5 .heart1{
+        display: block;
+        position: absolute;
+        top: -40px;
+        right: 10px;
+        width: 20%;
+    }
+    
+    .secao-5 .heart2{
+        display: block;
+        position: absolute;
+        top: 330px;
+        right: -30px;
+        width: 20%;
+    }
+    
+    
+    .secao-6{
+        height: 890px;
+        max-height: 890px;
+/*        padding-top: 66px;*/
+    }
+    
+    .secao-6 .conteudo-big{
+        display: flex;
+        padding: 0 0 0 90px;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100%;
+        position: relative;
+    }
+    
+    .secao-6 .jumbo{
+        width: 490px;
+        height: 100%;
+        padding: 0;
+        padding-top: 157px;
+    }
+    
+    .adwords{
+        position: absolute;
+        width: 1262px;
+        right: 0;
+        margin-top: 90px;
+    }
+    
+    .adwords img{
+        width: 100%;
+        transform: none;
+    }
+    
+    .secao-6 .jumbo h3,.secao-6 .jumbo h2, .secao-6 .jumbo p,.secao-6 .jumbo a{
+        text-align: left;
+    }
+    
+    .secao-6 .jumbo h3{
+        color: #fff;    
+    }
+    
+    .secao-6 .jumbo h2{
+        font-size: 50px;  
+    }
+    
+    .secao-6 .jumbo p{
+        font-size: 23px;
+        line-height: 1.22;
+    }
+    
+    .secao-6 .jumbo a{
         margin-top: 20px;
     }
     
