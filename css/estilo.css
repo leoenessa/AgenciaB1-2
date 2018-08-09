@@ -717,20 +717,17 @@ p::selection{
 
 /*================SECAO-7================*/
 
-.secao-6 .contatos{
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+.secao-7{
+    height: 100%;
+    background-color: #333539;
 }
 
-.secao-6 .contatos h2{
-    font-size: 25px;
+.secao-7 .contatos h2{
+    font-size: 35px;
     font-weight: 900;
     color: #fff;
-    text-transform: uppercase;
+    margin: 0;
+    margin-top: 30px;
     text-align: center;
 }
 
@@ -766,35 +763,45 @@ p::selection{
     cursor: pointer;
     text-transform: uppercase;
 }
+.secao-7 .contatos{
+    text-align: center;
+}
 
-.secao-6 .contatos p{
+.secao-7 .contatos p{
     font-size: 22px;
     font-weight: 300;
     text-align: center;
     color: #fff;
 }
 
-.secao-6 .contatos .contatos-telefones{
+.secao-7 .contatos .contatos-telefones{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin-top: 28px;
 }
 
-.secao-6 .contatos h6{
+.secao-7 .contatos .contatos-telefones h6{
     width: 100%;
     font-size: 15px;
+    text-align: center;
     color: #fff;
     line-height: 1.53;
     display: inline-block;
-/*    margin-left: 55px;*/
-    margin-top: 1%;
+    margin: 0;
+    margin-top: 20px;
+    position: relative;
 }
 
-.secao-6 .contatos h6.whatsapp{
+secao-7 .contatos .contatos-telefones .telefones span{
+        text-align: left;
+}
+
+.secao-7 .contatos h6.whatsapp{
     margin-left: 0;
 }
 
-.secao-6 .contatos h6.whatsapp:before{
+.secao-7 .contatos h6.whatsapp:before{
     content: url('../img/whatsapp-logo.svg');
     width: 1em;
     height: 1em;
@@ -802,7 +809,7 @@ p::selection{
     vertical-align: sub;
 }
 
-.secao-6 .contatos h6.email-contato:before{
+.secao-7 .contatos h6.email-contato:before{
     content: url('../img/mail-logo.svg');
     width: 1em;
     height: 1em;
@@ -810,66 +817,84 @@ p::selection{
     vertical-align: sub;
 }
 
-.secao-6 .contatos h6.telefones:before{
+.secao-7 .contatos h6.telefones:before{
     content: url('../img/telefone-logo.svg');
     width: 1em;
     height: 1em;
     padding-right: 10px;
     vertical-align: sub;
+    position: absolute;
+    transform: translateX(-75px);
 }
 
-.secao-6 form#formulario-contato{
+.secao-7 .contatos h6.telefones span{
+    display: block;
+
+}
+
+.secao-7 form#formulario-contato{
     display: flex;
     justify-content: space-between;
     margin-top: 5%;
     flex-wrap: wrap;
 }
 
-.secao-6 form#formulario-contato input{
+.secao-7 form#formulario-contato input{
     width: 100%;
     color: #000;
     border: solid 1px #dfdfdf;
     box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.08);
     margin-bottom: 5%;
-    height: 1em;
+    height: 60px;
     font-size: 15px;
-    padding: 5%;
+    padding: 0 10px;
     outline: none;
     transition: all .3s ease-in-out;
 }
 
-.secao-6 form#formulario-contato .select-projeto{
+.secao-7 form#formulario-contato .select-projeto{
     height: 2.5em;
 }
 
-.secao-6 form#formulario-contato input:focus{
+.secao-7 form#formulario-contato input:focus{
     box-shadow: 0 0 5px rgba(190, 214, 48, 1);
     border: 1px solid rgba(190, 214, 48, 1);
 }
 
-.secao-6 form#formulario-contato input:invalid{
+.secao-7 form#formulario-contato input:invalid{
     border: 2px solid red;
 }
-.secao-6 form#formulario-contato textarea{
+
+.secao-7 form#formulario-contato .form-control{
+    height: 60px;
+}
+
+.secao-7 form#formulario-contato textarea{
     width: 100%;
     height: 10em;
     margin-top: 5%;
     box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.08);
     background-color: #ffffff;
     border: solid 1px #dfdfdf;
-    margin-bottom: 5%;
+    margin-bottom: 30px;
     font-size: 15px;
 }
 
-.secao-6 form#formulario-contato #contato-form-btn{
-    margin-bottom: 30px;
+.secao-7 .contato-form-btn-container{
+    width: 100%;
+    text-align: center;
+    padding: 21px;
+    margin-bottom: 40px;
+}
+
+.secao-7 form#formulario-contato #contato-form-btn{
     border: 0;
     border-radius: 50px;
     background-color: #bed630;
     box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.08);
     color: #340c46;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 15px;
     padding: 21px 47px;
     cursor: pointer; 
     text-transform: uppercase;
@@ -911,14 +936,12 @@ footer{
 }
 
 footer img{
-    width: 25%;
+    width: 140px;
     padding-left: 5px;
 }
 
 footer address{
-    margin: 0;
-    width: 50%;
-    display: inline-block;
+    display: none;
     text-align: center;
 }
 
@@ -929,15 +952,19 @@ footer address p{
 }
 
 footer .redes-sociais-footer{
-    width: 25%;
+    width: 50%;
     margin: 0;
     display: inline-block;
-    text-align: center;
+    text-align: right;
 }
 
 footer .redes-sociais-footer a{
     color: #fff;
-    margin-left: 8px;
+}
+
+footer .redes-sociais-footer a img{
+    width: 20px;
+    height: 20px;
 }
 
 footer .redes-sociais-footer a:first-child{
@@ -1048,10 +1075,17 @@ FULL DESKTOP 1440px
         width: 100%;
     }
 
-    .secao-1 .container, .secao-2 .container, .secao-3 .container, .secao-4 .container, .secao-5 .container, .secao-6 .container {
+    .secao-1 .container, .secao-2 .container, .secao-3 .container, .secao-4 .container, .secao-5 .container, .secao-6 .container{
         padding: 0;
         height: 100%;
         width: 1440px !important;
+        margin: auto;
+    }
+    
+    .secao-7 .container{
+        padding: 0;
+        height: 100%;
+        width: 780px !important;
         margin: auto;
     }
     
@@ -1129,7 +1163,7 @@ FULL DESKTOP 1440px
     .wp-container{
         display: block;
         position: fixed;
-        bottom: 10px;
+        bottom: 40px;
         right: 25px;
         z-index: 10;
     }
@@ -1367,6 +1401,95 @@ FULL DESKTOP 1440px
     
     .secao-6 .jumbo a{
         margin-top: 20px;
+    }
+    
+    .secao-7{
+        width: 100%;
+    }
+    
+    .secao-7 .contatos h2{
+        font-size: 50px;
+        font-weight: bold;
+        margin-top: 66px;
+    }
+
+    .secao-7 .contatos .contatos-telefones{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 17px;
+    }
+
+    .secao-7 .contatos .contatos-telefones h6{
+        width: auto;
+        font-size: 15px;
+        text-align: left;
+        display: inline-block;
+        margin: 0 23px 0 0;
+        margin-top: 20px;
+    }
+    
+    .secao-7 .contatos .contatos-telefones h6:last-child{
+        margin-right: 0;
+    }
+
+    secao-7 .contatos .contatos-telefones .telefones span{
+        text-align: left;
+    }
+
+    .secao-7 .contatos h6.whatsapp{
+        margin-left: 0;
+    }
+
+    .secao-7 .contatos h6.telefones:before{
+        transform: translateX(-20px);
+    }
+
+    .secao-7 .contatos h6.telefones span{
+        display: inline-block;
+        margin-left: 5px;
+    }
+
+    .secao-7 form#formulario-contato{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .secao-7 form#formulario-contato input{
+        width: 380px;
+        margin-bottom: 19px;
+    }
+
+    [data-tip]{
+        width: 380px;
+    }
+    .secao-7 form#formulario-contato .form-control{
+        width: 380px;
+    }
+    
+    .secao-7 form#formulario-contato textarea{
+        margin-top: 0;
+    }
+
+    .secao-7 .contato-form-btn-container{
+        width: 100%;
+        text-align: left;
+        padding: 21px 0;
+        margin-bottom: 82px;
+    }
+
+    .secao-7 form#formulario-contato #contato-form-btn{
+        border: 0;
+        border-radius: 50px;
+        background-color: #bed630;
+        box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.08);
+        color: #340c46;
+        font-weight: bold;
+        font-size: 15px;
+        padding: 21px 47px;
+        cursor: pointer; 
+        text-transform: uppercase;
     }
     
     
