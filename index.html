@@ -500,11 +500,14 @@
 
             <div class="contatos">
                 <h2>Contato</h2>
-                <p>Não importa o tamanho do desafio</p>
                 <div class="contatos-telefones">
                     <h6 class="whatsapp">21 96576-8885</h6>
                     <h6 class="email-contato">contato@agenciab1.com.br</h6>
-                    <h6 class="telefones">21 96576-8885 | 21 97979-6508 | 21 967451591</h6>
+                    <h6 class="telefones">
+                        <span>21 96576-8885</span>
+                        <span>21 97979-6508</span>
+                        <span>21 967451591</span>
+                    </h6>
                 </div>21
             </div>
 
@@ -531,8 +534,10 @@
                 </select>
 
                 <textarea name="form_mensagem" id="form_mensagem" placeholder="Insira sua mensagem"></textarea>
-
-                <a id="contato-form-btn">Enviar mensagem</a>
+                <div class="contato-form-btn-container">
+                    <a id="contato-form-btn">Enviar mensagem</a>
+                </div>
+                
                 <script>
                     var status,a;
                     $('#contato-form-btn').click(function(){
@@ -569,7 +574,7 @@
 
       </div>
       <footer>
-            <img src="img/logo.svg"
+            <img src="img/logo-footer.svg"
                  srset="" class="logo-footer" />
 
             <address>
@@ -577,8 +582,8 @@
             </address>
 
             <div class="redes-sociais-footer">
-                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href="#"><img src="img/insta.svg" class="footer-insta"></a>
+                <a href="#"><img class="footer-face" src="img/face.svg"></a>
             </div>
       </footer>
             
